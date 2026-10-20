@@ -30,7 +30,7 @@ jobs:
 
       - name: Preparar la web
         env:
-          SITE_URL: ${{ steps.pages.outputs.base_url }}
+          SITE_URL: https://ggcolinas.com
         run: python3 tools/build_site.py --url "$SITE_URL"
 
       - name: Subir los archivos
